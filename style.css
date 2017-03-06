@@ -6,21 +6,30 @@ body{
     display: flex;
     justify-content: center;
     padding-left: 0px;
+  
 }
 .box{
   background: black;
   height: 5vw;
   width: 5%;
   list-style: none;
-  transition: .15s;
+  transition: .5s;
+}
+
+body:hover div:nth-of-type(odd) li:first-child{
+  background-color: green;
 }
 
 
-div:nth-of-type(odd) li:nth-of-type(even){
+body:hover div:nth-of-type(odd) li:nth-of-type(even){
   background: green;
+  transform: rotate(90deg);
+  transform-origin: 100% 100%;
+
 }
 
-div:nth-of-type(even) li:nth-of-type(odd){
+body:hover div:nth-of-type(even) li:nth-of-type(odd){
   background: green;
-
+  transform: rotate(90deg);
+  transform-origin: 100% 100%;
 }
